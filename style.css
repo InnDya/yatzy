@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid black;
+}
+
+caption {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+th {
+    text-align: left;
+    background-color: rgb(128, 128, 128);
+}
+
+td {
+    width: 20px;
+}
+
+tr.section td {
+    background-color: rgb(217, 217, 217);
+}
+
+td:nth-child(even) {
+    background-color: rgb(166, 166, 166);
+}
+
+td input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
