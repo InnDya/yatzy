@@ -11,5 +11,30 @@ calc_button.addEventListener("click", function(event) {
     console.log(sum);
     if (sum >= 63) {
         document.getElementById("player1_bonus").innerHTML = 50;
-    } 
-}) 
+    }
+    var fullhouse = [ones, twos, threes, fours, fives, sixes];
+    console.log(fullhouse);
+    var count = 1;
+    var found3 = false;
+    var found2 = false;
+    for (i = 0; i < fullhouse.length; i++) {
+        count = 1;
+        for (j = i + 1; j < fullhouse.length; j++) {
+            if (fullhouse[i] == fullhouse[j]) {
+                count += 1;
+                console.log(fullhouse[i] + ", i = " + i + ", j = " + j);
+            }
+        }
+        if (count == 3) {
+            console.log("found 3 matches for " + fullhouse[i]);
+            found3 = true;
+        }
+        else if (count == 2) {
+            console.log("found 2 matches for " + fullhouse[i]);
+            found2 = true;
+        }
+    }
+    if (found2 && found3) {
+        console.log("FULL HOUSE!!!");
+    }
+})  
