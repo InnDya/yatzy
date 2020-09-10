@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <form>
+    <form onsubmit='return false'>
     <table border="1">
         <caption>YATZY</caption>
         <tr class="section">
@@ -27,35 +27,35 @@
         </tr>
         <tr>
             <td>Tvåor/Twos</td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
+            <td><input id="player1_twos" type="number"></td>
+            <td><input id="player2_twos" type="number"></td>
+            <td><input id="player3_twos" type="number"></td>
+            <td><input id="player4_twos" type="number"></td>
         </tr>
         <tr>
             <td>Treor/Threes</td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
+            <td><input id="player1_threes" type="number"></td>
+            <td><input id="player2_threes" type="number"></td>
+            <td><input id="player3_threes" type="number"></td>
+            <td><input id="player4_threes" type="number"></td>
         </tr>
         <tr>
             <td>Fyror/Fours</td>
-            <td><input type="number"></td>
+            <td><input id="player1_fours" type="number"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
         </tr>
         <tr>
             <td>Femmor/Fives</td>
-            <td><input type="number"></td>
+            <td><input id="player1_fives" type="number"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
         </tr>
         <tr>
             <td>Sexor/Sixes</td>
-            <td><input type="number"></td>
+            <td><input id="player1_sixes" type="number"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
@@ -69,7 +69,7 @@
         </tr>
         <tr class="section">
             <th>Bonus</th>
-            <td></td>
+            <td id="player1_bonus"></td>
             <td></td>
             <td></td>
             <td></td>
